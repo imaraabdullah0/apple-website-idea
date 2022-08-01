@@ -1,0 +1,54 @@
+. tastimonials{
+    width:100%;
+
+}
+
+.tastimonials .container{
+    width: 1240px;
+    margin: 4rem auto;
+    padding: 4rem 0;
+}
+
+.tastimonials .container .content{
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin: 4rem 0;
+}
+.tastimonials .card{
+border: 1px;
+border-radius: 8px;
+box-shadow: 0 3px 10px black;
+padding: 1rem;
+cursor: pointer;
+}
+.tastimonials img{
+    border-radius: 50px;
+    margin-top: -2rem;
+    width: 30px;
+}
+.tastimonials .card p{
+    color: rgb(123, 112, 96);
+    font-size: 1.1rem;
+    margin: 12px;
+}
+.tastimonials .card span{
+    color: rgb(91, 141, 124);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 940px) {
+    .tastimonials .container{
+        width: 100%;
+
+    }
+    .tastimonials .container .content{
+        grid-template-columns: 1rem;
+    }
+    .tastimonials .card{
+        max-width: 100%;
+        margin: 1rem;
+    }
+    
+}
